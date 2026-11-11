@@ -5,8 +5,8 @@ export default function About() {
                 {/* Section 1: EWB & Community Projects - Image LEFT, Content RIGHT */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-16 mt-12">
                     <div className="order-2 lg:order-1">
-                        <div className="w-full h-64 lg:h-80 flex items-center justify-center border-2 border-black">
-                            <span className="text-black text-xl">Image</span>
+                        <div className="w-full h-64 lg:h-80 flex items-center justify-center bg-[#FB724B] border-2 border-black">
+                            <img src="/EWB-White.png" alt="Engineers Without Borders UofT" className="w-full max-w-sm h-auto" />
                         </div>
                     </div>
                     <div className="order-1 lg:order-2">
