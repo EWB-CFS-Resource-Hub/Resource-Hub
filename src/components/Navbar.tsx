@@ -36,7 +36,7 @@ export default function Nav() {
           <div className="w-[1px] md:w-[2px] h-10 md:h-16 lg:h-20 bg-gray-300 mx-2 md:mx-3 lg:mx-5" />
           <p className="tracking-tight text-lg md:text-2xl lg:text-2xl xl:text-3xl font-semibold text-white whitespace-nowrap">UofT Food Resource Hub</p>
         </Link>
-        <ul className="pt-3 pr-[3vw] hidden xl:flex flex-nowrap gap-[25px] min-w-max">
+        <ul className="pt-3 pr-[3vw] hidden min-[1440px]:flex flex-nowrap gap-[25px] min-w-max">
           {navItems.map((item) => (
             <li
               key={item.href}
@@ -76,7 +76,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-        <button className=" hover:text-orange-400 cursor-pointer transition duration-300 mr-4 md:mr-8 lg:mr-10 size-10 md:size-12 lg:size-14 xl:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
+        <button className=" hover:text-orange-400 cursor-pointer transition duration-300 mr-4 md:mr-8 lg:mr-10 size-10 md:size-12 lg:size-14 min-[1440px]:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <XMarkIcon />
           ) : (
@@ -86,7 +86,7 @@ export default function Nav() {
       </div>
 
       {isOpen && (
-        <div className="border-t-2 border-white xl:hidden bg-[#002A5C] px-6 py-4">
+        <div className="border-t-2 border-white min-[1440px]:hidden bg-[#002A5C] px-6 py-4">
           <ul className="flex flex-col gap-4">
             {navItems.map((item) => (
               <li key={item.href}>
